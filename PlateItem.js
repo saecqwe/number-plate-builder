@@ -15,6 +15,7 @@ export class PlateItem {
             border: null,
             badge: null
         };
+        this.characterSpacing = true;
         this.roadLegal = true;
         this.totalPrice = 0;
     }
@@ -60,6 +61,10 @@ export class PlateItem {
 
     toggleRoadLegality() {
         this.roadLegal = !this.roadLegal;
+    }
+
+    toggleCharacterSpacing() {
+        this.characterSpacing = !this.characterSpacing;
     }
 
     getSummary() {
