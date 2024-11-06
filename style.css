@@ -9,6 +9,38 @@
   background-color: #ddd;  /* Changed from white to #ddd */
 }
 
+.hidden{
+  opacity: 0%;
+}
+
+.k-pb__tab[aria-selected=true] {
+  background-color: #ffcd29;
+  color: #111;
+  }
+
+  
+  .k-pb__tab-group--viz .k-pb__tab {
+    background-color: #eee;
+    border-bottom: none;
+    outline: none;
+    }
+
+    .k-pb__tab {
+      border-radius: 4px 4px 0 0;
+      cursor: pointer;
+      display: block;
+      flex-grow: 1;
+      font-size: .875rem;
+      font-weight: 500;
+      overflow: hidden;
+      padding: 4px 12px;
+      text-align: left;
+      text-decoration: none!important;
+      text-transform: uppercase;
+      transition: all .2s;
+      -webkit-user-select: none;
+      user-select: none;
+      }
 body {
   margin: 0;
   display: flex;
@@ -20,7 +52,7 @@ body {
 }
 
 .form{
-background-color: #ffcd29;
+/* background-color: #ffcd29; */
 padding: 22px;
 }
 
@@ -42,6 +74,12 @@ button:hover {
   background-color: #ffcd29; /* New theme hover */
   color: black;
 }
+
+.selected {
+  background-color: #ffcd29; /* Use your preferred color */
+  font-weight: bold;
+}
+
 
 button:focus,
 button:focus-visible {
@@ -101,17 +139,19 @@ ul li a {
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
+
+
 ul li a:hover {
   background-color: #ffcd29; /* Hover state */
   color: black;
   border-color: #ffcd29;
 }
 
-ul li a[aria-current="page"] {
+/* ul li a[aria-current="page"] {
   background-color: #ffcd29;
   color: black;
   border-color: #ffcd29;
-}
+} */
 
 input[type="checkbox"] {
   margin-right: 10px;
